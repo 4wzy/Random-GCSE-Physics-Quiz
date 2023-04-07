@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+
+  font-family: 'Roboto Mono', monospace;
+  font-size: large;
+}
+
+:root {
+  --hue-neutral: #ffff;
+  --hue-wrong: #c2371e;
+  --hue-correct: #2c9040;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.info {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: small;
+}
+
+.big-container {
+  font-size: xx-large;
+  margin: auto;
+  text-align: center;
+  width: 100vw;
+  max-width: 100%;
+  color: black;
+  padding: 10px;
+  margin-bottom: 100px;
+  background-color: var(--hue-neutral);
+}
+
+body.correct {
+  --hue: var(--hue-neutral);
+}
+
+body.wrong {
+  --hue: var(--hue-neutral);
+}
+
+.container {
+  margin: auto;
+  width: 100vw;
+  max-width: 80%;
+  background-color: white;
+
+  padding: 10px;
+
+}
+
+.btn-grid {
+  display: grid;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid black;
+  background-color: var(--hue);
+  border-radius: 0px;
+  padding: 10px 10px 10px 10px;
+  color: black;
+  outline: none;
+  text-align: left;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn,
+.next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  color: black;
+}
+
+.no-bullet-point {
+  list-style-type: none;
+}
